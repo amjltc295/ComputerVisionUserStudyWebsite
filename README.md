@@ -2,6 +2,14 @@
 
 Flask+React website for user study.
 
+<kbd> <img src='./doc/screenshot.png' /> </kbd>
+
+## Demo
+See the [demo client](https://cv-user-study-website-demo.netlify.com/) and [demo server](https://cv-user-study-website.herokuapp.com/show_results)
+
+Or the [original website](http://cml11.csie.ntu.edu.tw:3000/) (may be deprecated)
+
+## Introduction
 It was originally used to setup surveys that ask user's preferance for video pairs.
 
 After the user enters his/her name, n video pairs will be selected from the database according to their answered times.
@@ -11,12 +19,6 @@ The website will then show these video pairs to the user and asks their preferan
 A video pair should consist of two sub-videos by different methods to compare (i.e. ours vs baseline).
 
 The video data and URL are defined in a csv (`tests/example.csv`) and will be read before the server starts.
-
-See the [demo client](https://cv-user-study-website-demo.netlify.com/) and [demo server](https://cv-user-study-website.herokuapp.com/show_results)
-
-Or the [original website](http://cml11.csie.ntu.edu.tw:3000/) (may be deprecated)
-
-<kbd> <img src='./doc/screenshot.png' /> </kbd>
 
 ## How to run
 
