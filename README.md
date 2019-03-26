@@ -7,8 +7,6 @@ Flask+React website for user study.
 ## Demo
 See the [demo client](https://cv-user-study-website-demo.netlify.com/) and [demo server](https://cv-user-study-website.herokuapp.com/) (+endpoint: `/show_results`, `/show_answers`, `/show_video_pairs`, `/show_usernames`)
 
-Or the [original website](http://cml11.csie.ntu.edu.tw:3000/) (may be deprecated)
-
 ## Introduction
 It was originally used to setup surveys that ask user's preferance for video pairs.
 
