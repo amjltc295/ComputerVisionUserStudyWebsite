@@ -51,7 +51,7 @@ class App extends Component {
         return responseJson
       })
       .catch((error) => {
-        alert("English name please")
+        alert("Error! English name please. Press F12 to see the log.")
         console.log(error)
       })
   }
