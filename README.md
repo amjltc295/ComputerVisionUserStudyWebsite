@@ -93,6 +93,12 @@ Simply running the afrorementioned steps with proper ports should work.
 ├── lib/                    For third-party libraries
 ├── client/                 For React client source code
 └── src/                    For Flask server source code
+    ├── app.py              Main Flask app
+    ├── config.py           All configs
+    ├── db_interface.py     Functions for database I/O
+    ├── __init__.py         App initialization
+    ├── logging_config.py   Logger config
+    └── model.py            ORM models
 
 ```
 
