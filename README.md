@@ -1,14 +1,18 @@
 # User Study Website for Computer Vision
 
-Flask+React website setup surveys that ask user's preferance of video pairs.
+Flask+React website for user study.
+
+It was originally used to setup surveys that ask user's preferance for video pairs.
 
 See the [demo client](https://cv-user-study-website-demo.netlify.com/) and [demo server](https://cv-user-study-website.herokuapp.com/show_results)
+
+Or the [original website](http://cml11.csie.ntu.edu.tw:3000/) (may be deprecated)
 
 <kbd> <img src='./doc/screenshot.png' /> </kbd>
 
 ## How to run
 
-### Server
+### Back-end
 1. Install miniconda/anaconda, a package for package/environment management
 ```
 wget repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -37,7 +41,7 @@ export FLASK_APP=app.py
 flask run
 ```
 
-### Client
+### Front-end
 1. Install nodejs and npm
 
 2. Run
@@ -81,6 +85,7 @@ Simply running the afrorementioned steps with proper ports should work.
 └── src/                    For Flask server source code
 
 ```
+
 ## License
 
 MIT 
