@@ -6,8 +6,9 @@ See the [demo client](https://cv-user-study-website-demo.netlify.com/) and [demo
 
 <kbd> <img src='./doc/screenshot.png' /> </kbd>
 
-## Installation
+## How to run
 
+### Server
 1. Install miniconda/anaconda, a package for package/environment management
 ```
 wget repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -24,12 +25,11 @@ conda env create -f environment.yaml
 source activate user_study
 ```
 
-## How to run
-1. Server
+4. Edit `src/config.py` for the database settings (skip this step to use example database for testing)
+
+5. Run 
 ```
 cd src
-
-# (Please setup the config.py)
 
 # export FLASK_RUN_PORT=5000
 # export FLASK_RUN_HOST=0.0.0.0
@@ -37,7 +37,10 @@ export FLASK_APP=app.py
 flask run
 ```
 
-2. Client
+### Client
+1. Install nodejs and npm
+
+2. Run
 ```
 cd client
 npm install
