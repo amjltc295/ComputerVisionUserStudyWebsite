@@ -5,7 +5,7 @@ Flask+React website for user study.
 <kbd> <img src='./doc/screenshot.png' /> </kbd>
 
 ## Demo
-See the [demo client](https://cv-user-study-website-demo.netlify.com/) and [demo server](https://cv-user-study-website.herokuapp.com/show_results)
+See the [demo client](https://cv-user-study-website-demo.netlify.com/) and [demo server](https://cv-user-study-website.herokuapp.com/) (+endpoint: `/show_results`, `/show_answers`, `/show_video_pairs`, `/show_usernames`)
 
 Or the [original website](http://cml11.csie.ntu.edu.tw:3000/) (may be deprecated)
 
