@@ -86,6 +86,13 @@ Simply running the afrorementioned steps with proper ports should work.
 
 ```
 
+## TODO
+Contributions are welcome!
+
+- [ ] Refactoring: the model and db_interface are now fixed and they may be hard to modify
+- [ ] Database migration
+- [ ] UI improvement
+
 ## License
 
 MIT 
