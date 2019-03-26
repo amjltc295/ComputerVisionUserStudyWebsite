@@ -102,6 +102,7 @@ Contributions are welcome!
 - [ ] Refactoring: the model and db_interface are now fixed and they may be hard to modify
 - [ ] Database migration
 - [ ] UI improvement
+- [ ] Error handling
 
 ## License
 
