@@ -75,6 +75,8 @@ def receive_answer(file_ID, ans):
         video_pair = VideoPair.query.filter_by(file_ID=file_ID).first()
         video_pair.answer_B = video_pair.answer_B + 1
         db.session.commit()
+    else:
+        raise IOError(f"Invalid answer {ans} for {file_ID}")
 
 
 def assign_video_pairs():

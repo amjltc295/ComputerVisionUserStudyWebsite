@@ -13,7 +13,8 @@ from .db_interface import (
     get_results_dict,
     get_answers_dict, get_usernames_dict,
     create_user, create_answer, assign_survey,
-    read_video_pairs, get_video_pairs_dict
+    read_video_pairs, get_video_pairs_dict,
+    receive_answer
 )
 from .config import VIDEO_PARI_FILENAME
 
@@ -40,6 +41,7 @@ def answer_question(username, file_ID, ans):
     Receives the answer of a question from a user
     '''
     create_answer(username, file_ID, ans)
+    receive_answer(file_ID, ans)
     msg = f"Got {file_ID} answer {ans} from {username}"
     logger.info(msg)
     response = {
