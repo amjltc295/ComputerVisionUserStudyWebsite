@@ -49,6 +49,23 @@ export REACT_APP_ENDPOINT=<the path to your server; for example, http://localhos
 npm start
 ```
 
+## How to deploy
+### If you have a server
+Simply running the afrorementioned steps with proper ports should work.
+
+### If you do not have a server
+#### Deploy the back-end
+1. Go to [Heroku](https://www.heroku.com/) and create an app
+2. Connect to this repo (fork it first)
+3. Manually deploy the master branch
+
+#### Deploy the front-end
+1. Go to [Netlify](https://www.netlify.com/) and create an website
+2. Set `Build command` to `cd client && npm i && npm run build` and `Publish directory` to `client/build`
+3. Add an environment variables: `REACT_APP_ENDPOINT` to your back-end server address
+
+
+
 ## Repository Structure
 ```
 ├── .flake8                 Syntax and style settings for Flake8
