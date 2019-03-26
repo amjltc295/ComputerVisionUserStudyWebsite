@@ -2,7 +2,7 @@
 
 Flask+React website setup surveys that ask user's preferance of video pairs.
 
-See the [democlient](https://heuristic-joliot-ae88e6.netlify.com/) and [demoserver](https://cv-user-study-demo.herokuapp.com/show_results)
+See the [demo client](https://cv-user-study-website-demo.netlify.com/) and [demo server](https://cv-user-study-website.herokuapp.com/show_results)
 
 <kbd> <img src='./doc/screenshot.png' /> </kbd>
 
