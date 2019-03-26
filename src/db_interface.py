@@ -67,16 +67,17 @@ def read_video_pairs(filename):
 
 
 def receive_answer(file_ID, ans):
-    if ans == 'A':
-        video_pair = VideoPair.query.filter_by(file_ID=file_ID).first()
-        video_pair.answer_A = video_pair.answer_A + 1
-        db.session.commit()
-    elif ans == 'B':
-        video_pair = VideoPair.query.filter_by(file_ID=file_ID).first()
-        video_pair.answer_B = video_pair.answer_B + 1
+    video_pair = VideoPair.query.filter_by(file_ID=file_ID).first()
+    if video_pair is not None:
+        if ans == 'A':
+            video_pair.answer_A = video_pair.answer_A + 1
+        elif ans == 'B':
+            video_pair.answer_B = video_pair.answer_B + 1
+        else:
+            raise IOError(f"Invalid answer {ans} for {file_ID}")
         db.session.commit()
     else:
-        raise IOError(f"Invalid answer {ans} for {file_ID}")
+        logger.error(f"Got invalid file_ID {file_ID} ans {ans}")
 
 
 def assign_video_pairs():
